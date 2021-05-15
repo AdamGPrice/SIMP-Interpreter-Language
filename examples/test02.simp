@@ -5,10 +5,6 @@ arr[1] = 12
 arr.setIndex(1, 33)
 
 arr.print()
-arr.sort()
-println("Sorted Array")
-arr.print()
-
 
 println(arr[1])
 println(arr.getIndex(1))

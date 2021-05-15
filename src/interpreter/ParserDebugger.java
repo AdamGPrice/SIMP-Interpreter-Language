@@ -2,7 +2,7 @@ package interpreter;
 
 import parser.ast.*;
 
-public class ParserDebugger implements SiliVisitor {
+public class ParserDebugger implements SimpVisitor {
 	
 	private int indent = 0;
 	
@@ -191,11 +191,6 @@ public class ParserDebugger implements SiliVisitor {
 	}
 	
 	public Object visit(ASTArrayPrint node, Object data) {
-		dump(node, data);
-		return data;
-	}
-	
-	public Object visit(ASTArraySort node, Object data) {
 		dump(node, data);
 		return data;
 	}

@@ -1,8 +1,8 @@
 package interpreter;
 
 import parser.ast.ASTCode;
-import parser.ast.Sili;
-import parser.ast.SiliVisitor;
+import parser.ast.Simp;
+import parser.ast.SimpVisitor;
 import values.Value;
 
 import java.io.*;
@@ -29,10 +29,10 @@ public class Interpreter {
 		// Import any base library code the user wants to use
 		importLibraries();
 		
-		Sili language = new Sili(System.in);
+		Simp language = new Simp(System.in);
 		try {
 			ASTCode parser = language.code();
-			SiliVisitor nodeVisitor;
+			SimpVisitor nodeVisitor;
 			if (debugAST)
 				nodeVisitor = new ParserDebugger();
 			else

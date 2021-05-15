@@ -8,7 +8,7 @@ import java.util.Set;
 import parser.ast.*;
 import values.*;
 
-public class Parser implements SiliVisitor {
+public class Parser implements SimpVisitor {
 	
 	// Scope display handler
 	private Display scope = new Display();
@@ -45,7 +45,7 @@ public class Parser implements SiliVisitor {
 		return data;
 	}
 	
-	// Execute a Sili program
+	// Execute a Simp program
 	public Object visit(ASTCode node, Object data) {
 		return doChildren(node, data);	
 	}
@@ -505,25 +505,6 @@ public class Parser implements SiliVisitor {
 			System.out.println(" }");
 		}
 				
-		return data;
-	}
-	
-	// Print
-	public Object visit(ASTArraySort node, Object data) {	
-		Display.Reference reference;
-		if (node.optimised == null) {
-			String name = getTokenOfChild(node, 0);
-			reference = scope.findReference(name);
-			if (reference == null)
-				throw new ExceptionSemantic("Variable or parameter " + name + " is undefined.");
-			node.optimised = reference;
-		} else
-			reference = (Display.Reference)node.optimised;
-				
-		ValueArray arr = (ValueArray)reference.getValue();	
-		
-		arr.sort();
-		
 		return data;
 	}
 	

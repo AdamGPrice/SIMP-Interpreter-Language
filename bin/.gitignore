@@ -1,1 +1,8 @@
 /parser/ast
+/.gitignore
+/Libs/
+/Sili.class
+/interpreter/
+/parser/
+/values/
+/Simp.class

@@ -1,6 +1,6 @@
-/** Convenient runner for the Sili interpreter. */
+/** Convenient runner for the SIMP interpreter. */
 
-public class Sili {
+public class Simp {
 	public static void main(String[] args) {
 		interpreter.Interpreter.main(args);
 	}

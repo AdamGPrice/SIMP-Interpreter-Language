@@ -30,10 +30,10 @@ options {
   JJTREE_OUTPUT_DIRECTORY = "ast";
 }
 
-PARSER_BEGIN(Sili)
+PARSER_BEGIN(Simp)
 package parser.ast;
-public class Sili {}
-PARSER_END(Sili)
+public class Simp {}
+PARSER_END(Simp)
 
 /*
  *
@@ -293,7 +293,7 @@ void array_function() :
   					| LOOKAHEAD(4) identifier() ".pop" "(" ")" #ArrayPop(1)
   					| LOOKAHEAD(2) identifier() ".length" "(" ")" #ArrayLength(1)
   					| LOOKAHEAD(2) identifier() ".print" "(" ")" #ArrayPrint(1)
-  					| LOOKAHEAD(2) identifier() ".sort" "(" ")" #ArraySort(1)
+  					//| LOOKAHEAD(2) identifier() ".sort" "(" ")" #ArraySort(1)
   					| LOOKAHEAD(2) identifier() ".first" "(" ")" #ArrayFirst(1)
   					| LOOKAHEAD(2) identifier() ".last" "(" ")" #ArrayLast(1)
   					| LOOKAHEAD(2) identifier() ".insert" "(" expression() "," expression() ")" #ArrayInsert(3)
