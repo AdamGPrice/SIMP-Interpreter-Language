@@ -1,0 +1,29 @@
+for (i, 5) {
+  println(i)
+}
+
+println("")
+
+for (i, 12, 20) {
+  println(i)
+}
+
+println("")
+
+
+for (i, 2, 20, 3) {
+  println(i)
+}
+
+println("")
+
+for (i, 5, -5) {
+  println(i)
+}
+
+println("")
+i = 0
+while (i < 10) {
+  println(i)
+  i+= 1
+}

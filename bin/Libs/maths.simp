@@ -1,0 +1,38 @@
+function abs(val) {
+	if (val < 0) {
+		val = val * -1
+	} 
+	return val
+}
+
+function pow(val, val2) {
+	return val ^ val2
+}
+
+function sqrt(val) {
+	return val ** 0
+}
+
+function floor(val) {
+	return val ~ 0
+}
+
+function ceil(val) {
+	return floor(val) + 1
+}
+
+function cos(val) {
+	return val @ 0
+}
+
+function sin(val) {
+	return val @@ 0
+}
+
+function factorial(val) {
+    fact = 1
+    for (z = 2; z < val + 1; z += 1) {
+		fact = fact * z
+    }
+    return fact
+}

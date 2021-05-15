@@ -1,0 +1,24 @@
+#import 'maths'
+#import 'random'
+
+numbers = {}
+
+for (i, 10) {
+  str = "" + i
+  numbers.put(str, 0)
+}
+
+for (i, 10000) {
+  num = floor(randomRange(0, 10))
+  str = "" + num
+  current = numbers.get(str)
+  current += 1
+  numbers.put(str, current)
+}
+
+for (i, 10) {
+  str = "" + i
+  print(str)
+  print(" -> ")
+  println(numbers.get(str))
+}

@@ -1,0 +1,7 @@
+function random() {
+	return 0 ? 1
+}
+
+function randomRange(start, end) {
+	return start ? end
+}

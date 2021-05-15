@@ -1,0 +1,11 @@
+#!/bin/sh
+echo "=== Test01.simp ==="
+java -classpath ./bin Sili < ./examples/test01.simp
+echo "=== Test02.simp ==="
+java -classpath ./bin Sili < ./examples/test02.simp
+echo "=== Test03.simp ==="
+java -classpath ./bin Sili < ./examples/test03.simp
+echo "=== Test04.simp ==="
+java -classpath ./bin Sili < ./examples/test04.simp
+echo "=== Test05.simp ==="
+java -classpath ./bin Sili < ./examples/test05.simp

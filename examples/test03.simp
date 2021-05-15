@@ -1,0 +1,19 @@
+function fizzbuzz(start, end) {
+  for (i, start, end) {
+    str = ""
+    if (i % 3 == 0) {
+      str = str + "Fizz"
+    }
+    if (i % 5 == 0) {
+      str = str + "Buzz"
+    }
+    if (str == "") {
+      str = str + i
+    }
+    println(str)
+  }
+}
+
+fizzbuzz(1, 101)
+
+fizzbuzz(100, 0)

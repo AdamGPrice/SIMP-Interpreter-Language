@@ -1,0 +1,52 @@
+arr = [4, 5, 6, 3]
+
+println(arr[1])
+arr[1] = 12
+arr.setIndex(1, 33)
+
+arr.print()
+arr.sort()
+println("Sorted Array")
+arr.print()
+
+
+println(arr[1])
+println(arr.getIndex(1))
+
+a = arr.pop()
+
+println(a)
+
+arr.push(10)
+
+println(arr.getIndex(arr.length() - 1))
+
+arr.print()
+
+println(arr.last())
+println(arr.first())
+
+arr.print()
+arr.insert(1, 12)
+
+arr.print()
+
+arr.remove(3)
+arr.print()
+
+println(5 % 2)
+
+b = { "apple":3, "orange":12, "banana": 5, "pineapple":"fourteen" }
+
+println(b.get("apple"))
+println(b.get("orange"))
+println(b.get("pineapple"))
+
+b.put("kiwi", 390)
+
+println(b.get("kiwi"))
+
+b.pop("apple")
+b.replace("orange", "fda")
+
+b.print()

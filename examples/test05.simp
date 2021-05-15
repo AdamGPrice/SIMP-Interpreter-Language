@@ -1,0 +1,31 @@
+#import 'maths'
+#import 'random'
+
+i = pow(5, 2) + pow(5, 3)
+println(i)
+
+b = sqrt(25)
+println(b)
+
+a = random()
+println(a)
+
+for (i, 10) {
+  println(floor(randomRange(0, 10)) + 1)
+}
+
+for (i, 10) {
+  println(ceil(randomRange(0, 10)))
+}
+c = randomRange(0, 10)
+
+println(c)
+
+println(cos(90))
+println(sin(90))
+
+function double(val) {
+  return val * 2
+}
+
+println(double(5))

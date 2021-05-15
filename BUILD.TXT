@@ -1,0 +1,5 @@
+*Guide to compile SIMP*
+
+1. Import project into eclipse
+2. Compile the jjt file with javacc
+3. Run examples from command prompt/read README.TXT
